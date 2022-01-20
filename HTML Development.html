@@ -2,34 +2,49 @@
 <html>
 <h1>HTML</h1>
 <h2>Html communicates instruction to the web browser<br>
-Indicates how the page should be presented to the viewer</h2>
+    Indicates how the page should be presented to the viewer</h2>
 
+<head>
+    <style>
+        body {
+            scroll-behavior: smooth
+        }
+    </style>
+</head>
 
 <body>
     <ol>
-        <h3>Section 1</h3>
+        <a href="#section1">
+            <h3>Section 1</h3>
+        </a>
+
         <li>what is html? </li>
-        <li>Tag elements aand attribures</li>
-        <li>Seeting up the system</li>
+        <li>Tag elements aand attributes</li>
+        <li>Setting up the system</li>
     </ol>
     <hr>
     <ol>
-        <h3>Section 2</h3>
-        <li >basic structure of html page</li>
+        <a href="#section2">
+            <h3>Section 2</h3>
+        </a>
+
+        <li>Basic structure of html page</li>
         <li>Html head tag</li>
         <li>html Body tag</li>
-        <li>html Paragraph spacing</li>
+        <li>Html Paragraph spacing</li>
         <li>html Line breaks</li>
         <li>html Non breaking space</li>
         <li>html Header tag</li>
         <li>Html text formatting and decoration</li>
         <li>html Inline text formatting </li>
-        <li>Tag elements aand attribures</li>
-        <li>Seeting up the system</li>
+        <li>Tag elements and attributes</li>
+        <li>Setting up the system</li>
     </ol>
     <hr>
     <ol>
-        <h3>Section 3</h3>
+        <a href="#section3">
+            <h3>Section 3</h3>
+        </a>
         <li>html unordered list</li>
         <li>html Ordered list</li>
         <li>html Embedding videos</li>
@@ -39,7 +54,10 @@ Indicates how the page should be presented to the viewer</h2>
     </ol>
     <hr>
     <ol>
-        <h3>Section 4</h3>
+        <a href="#section4">
+            <h3>Section 4</h3>
+        </a>
+
         <li>html tables</li>
         <li>Html nested tables</li>
         <li>Html marging cells</li>
@@ -49,7 +67,10 @@ Indicates how the page should be presented to the viewer</h2>
     </ol>
     <hr>
     <ol>
-        <h3>Section 5</h3>
+        <a href="#section5">
+            <h3>Section 5</h3>
+        </a>
+
         <li>html intro – forms</li>
         <li>Html forms tag and attributes</li>
         <li>Html forms –post vs get</li>
@@ -61,7 +82,10 @@ Indicates how the page should be presented to the viewer</h2>
     </ol>
     <hr>
     <ol>
-        <h3>Section 6</h3>
+        <a href="#section6">
+            <h3>Section 6</h3>
+        </a>
+
         <li>html project-intro</li>
         <li>html project-header</li>
         <li>html project—callout</li>
@@ -73,19 +97,642 @@ Indicates how the page should be presented to the viewer</h2>
 
     </ol>
     <hr>
+    <p id="section1">
+    <h3>what is html?</h3>
+    <div>HTML - Hyper Text Markup Language</div>
+    <div>html is used to describe the Structure of WebPage<br>
+        html is used to Describe how the content Display on Web Browser<br>
+        html page help to link all the resources on the server <br>
+        client browser sends the request to access the html WebPage<br>
+        server sends the html page to client browser<br>
+        Client browsers print the html page
+    </div>
+    <h3>What is tag , Element and Attribute </h3>
+    <div>starting tag < tag> some text < / tag> Closing tag<br>
+                empty tag or self closing tag < tag>
+                    < / tag>,</br>
+                        < br /> = Empty Element <br>
+                        < tag name="value"> some text < / tag> ---> name="value"- Attribute
+                                <br>Eg:
+                                < a href="https://www.google.com/"> Google < / a>
+
+    </div>
+    <h3>Setting up the system</h3>
+    <div>Tools - Notepad++ <br> install and run</div>
+    </p>
+    <hr>
+    <p id="section2">
+    <h2>Basic structure of html page</h2>
+    <!DOCTYPE html>
+    <html>
+
+    <head>
+        <meta charser="UTF-8">
+        <title>Page Title</title>
+    </head>
+
+    <body>
+        <p> This is paragraph tag</p>
+        <h1>Heading</h1>
+    </body>
+
+    </html>
+    <h2> Html head tag</h2>
+    <!DOCTYPE html>
+    <html>
+
+    <head>
+        <meta name="description" content="page Description is here" />
+        <title>Page Title</title>
+    </head>
+
+    <body>
+        this is the simple html document and its all about head section
+    </body>
+
+    </html>
+    <h2>Html Body tag</h2>
+    <!DOCTYPE html>
+    <html>
+
+    <head>
+        <title>My First WebPage</title>
+        <style type="text/css">
+            /* body{
+                        color:red; 
+                    } */
+        </style>
+    </head>
+
+    <body>
+        this is simple HTML Document.
+        Enter Name:<input type="text">
+    </body>
+
+    </html>
+    <h2>Html Paragraph spacing</h2>
+    <!DOCTYPE html>
+    <html>
+
+    <head>
+        <title>My First WebPage</title>
+        <style type="text/css">
+            .clr {
+                color: red;
+            }
+        </style>
+    </head>
+
+    <body>
+        <p class="clr">this is simple HTML Document.</p>
+        Enter Name:<input type="text">
+    </body>
+
+    </html>
+    <h3>Line Break Tag</h3>
+    <div>this is line one.<br>this is line 2</div>
+    <h2>Html Non Breaking Space</h2>
+    <p>This is line1.&nbsp&nbsp&nbsp&nbsp&nbsp This is line2.&nbsp&nbsp&nbsp&nbsp&nbsp&nbspThis is Line2</p>
+    <h2>Html Header Tag</h2>
+    <h1>Header1</h1>
+    <h2>Header2</h2>
+    <h3>Header3</h3>
+    <h4>Header4</h4>
+    <h5>Header5</h5>
+    <h6>Header6</h6>
+    <h2>Html text formatting and Decoration</h2>
+    <p><strong>Bold Text</strong></p>
+    <em>Italic Text</em><br>
+    <u>Underline Text</u><br>
+    <strike>Strike text</strike><br>
+    <u><em><strong>bold, italic, and underline</strong></em></u>
+    <h3>html Inline text formatting </h3>
+    <h6>
+        <font face="arial" size="22" color="blue"> Inline Text</font>
+    </h6>
+    </p>
+    <hr>
+    <p id="section3">
+    <h2>Html Unordered List</h2>
+    <h3>My favourite Sports:</h3>
+    <ul>
+        <li>Foodball</li>
+        <li>Running</li>
+        <li>Hockey</li>
+        <li>Soccer</li>
+    </ul>
+    <h2>Ordered List</h2>
+    <h3>My Favourite Vacation</h3>
+    <ol>
+        <li>Miami</li>
+        <li>Sikkim</li>
+        <li>Paris</li>
+    </ol>
+    <h2>Html Image Insertion</h2>
+    <h4>Picture</h4>
     <p>
-        <h3>what is html?</h3>
-        <div>HTML - Hyper Text Markup Language</div>
-        <div>html is used to describe the Structure of WebPage<br>
-            html is used to Describe how the content Display on Web Browser<br>
-            html page help to link all the resources on the server <br>
-            client browser sends the request to access the html WebPage<br>
-            server sends the html page to client browser<br>
-            Client browsers print the html page
-        </div>
-        <h3>What is tag ,Element and Attribute </h3>
-        <div>starting tag < tag > some text < / tag > Closing tag</div>
+        <img src="../HTML_&_CSS/image/9106ba4d-8721-4a51-bc75-370284f76cb8-GettyImages-802893644.jpg" width="333"
+            height="250">
+        <img src="../HTML_&_CSS/image/1567187126_sikkim_paradise.jpg" width="333" height="250">
+        <img src="../HTML_&_CSS/image/france-paris-eiffel-tower.jpg" width="333" height="250">
+    </p>
+    <h2>Html Enbedding Video</h2>
+    <video width="50%" controls>
+        <source src="../HTML_&_CSS/Video/video1.mp4" type="video/mp4">
+        sample Video
+    </video>
+    <!-- <h2>Html Enbedding Video</h2>
+        <video width="50%" autoplay>
+            <source src="../HTML_&_CSS/Video/video1.mp4" type="video/mp4">
+            sample Video 
+        </video> -->
+    <h2>Html Link Creation</h2>
+    <p>
+        <a href="https://en.wikipedia.org/wiki/Miami"><img
+                src="../HTML_&_CSS/image/9106ba4d-8721-4a51-bc75-370284f76cb8-GettyImages-802893644.jpg" width="333"
+                height="250"></a>
+        <a href="https://en.wikipedia.org/wiki/Sikkim"><img src="../HTML_&_CSS/image/1567187126_sikkim_paradise.jpg"
+                width="333" height="250"></a>
+        <a href="https://en.wikipedia.org/wiki/Paris"><img src="../HTML_&_CSS/image/france-paris-eiffel-tower.jpg"
+                width="333" height="250"></a>
+    </p>
+    <p>
+        <a href="https://en.wikipedia.org/wiki/Miami" target="blank">miami</a><br>
+        <a href="https://en.wikipedia.org/wiki/Sikkim" target="_blank">Sikkim</a><br>
+        <a href="https://en.wikipedia.org/wiki/Paris" target="blank">Paris</a>
+    </p>
+    <h2>Html Anchor Tag</h2>
+    <!-- using Section Navigation for Eg:
+        <a href="#section1">
+            <h3>Section 1</h3>
+        </a>
+        <p id="section1"></p>-->
+    </p>
+    <hr>
+    <p id="section4">
+    <h2>Html Tables</h2>
+    <table width="50%" border="1" bordercolor="blue" cellspacing="2" cellpadding="2">
+        <tr>
+            <td>Sports</td>
+            <td>Responses</td>
+        </tr>
+        <tr>
+            <td>basketball</td>
+            <td>25</td>
+        </tr>
+        <tr>
+            <td>foodball</td>
+            <td>45</td>
+        </tr>
+        <tr>
+            <td>Running</td>
+            <td>12</td>
+        </tr>
+        <tr>
+            <td>Hockey</td>
+            <td>20</td>
+        </tr>
+    </table>
+    <h2>Html Nested Tables</h2>
+    <table width="100%" border="1" bordercolor="red" cellspacing="2" cellpadding="2">
+        <tr>
+            <td>
+                <table width="50%" border="1" bordercolor="blue" cellspacing="2" cellpadding="2">
+                    <tr>
+                        <td>Sports</td>
+                        <td>Responses</td>
+                    </tr>
+                    <tr>
+                        <td>basketball</td>
+                        <td>25</td>
+                    </tr>
+                    <tr>
+                        <td>foodball</td>
+                        <td>45</td>
+                    </tr>
+                    <tr>
+                        <td>Running</td>
+                        <td>12</td>
+                    </tr>
+                    <tr>
+                        <td>Hockey</td>
+                        <td>20</td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+    <h2>Html Marging Cells</h2>
+    <table width="600" border="1">
+        <tr>
+            <td colspan="2">Sports</td>
+        </tr>
+        <tr>
+            <td>basketball</td>
+            <td>25</td>
+        </tr>
+        <tr>
+            <td>foodball</td>
+            <td>45</td>
+        </tr>
+        <tr>
+            <td>Running</td>
+            <td>12</td>
+        </tr>
+        <tr>
+            <td>Hockey</td>
+            <td>20</td>
+        </tr>
+    </table>
+    <h2>Html Text Warpping</h2>
+    <table width="600" border="1">
+        <tr>
+            <td colspan="2">Use the border-collapse property set to "collapse" and table-layout property set to "fixed"
+                on the
+                element. Also, specify the width of the table.
+                Then, set the word-wrap property to its "break-word" value for elements and add border and width to
+                them.
+            </td>
+        </tr>
+        <tr>
+            <td>basketball</td>
+            <td>25</td>
+        </tr>
+        <tr>
+            <td>foodball</td>
+            <td>45</td>
+        </tr>
+        <tr>
+            <td>Running</td>
+            <td>12</td>
+        </tr>
+        <tr>
+            <td>Hockey</td>
+            <td>20</td>
+        </tr>
+    </table>
+    <h2>Html table background image</h2>
+
+    <table width="600" border="1" background="../HTML_&_CSS/image/table-background.jpg">
+        <tr>
+            <td colspan="2">Sports</td>
+        </tr>
+        <tr>
+            <td>basketball</td>
+            <td>25</td>
+        </tr>
+        <tr>
+            <td>foodball</td>
+            <td>45</td>
+        </tr>
+        <tr>
+            <td>Running</td>
+            <td>12</td>
+        </tr>
+        <tr>
+            <td>Hockey</td>
+            <td>20</td>
+        </tr>
+    </table>
+    <table width="600" border="1">
+        <tr>
+            <td colspan="2"  >Sports</td>
+        </tr>
+        <tr>
+            <td>basketball</td>
+            <td>25</td>
+        </tr>
+        <tr>
+            <td>foodball</td>
+            <td>45</td>
+        </tr>
+        <tr>
+            <td background="../HTML_&_CSS/image/table-background.jpg">Running</td>
+            <td>12</td>
+        </tr>
+        <tr>
+            <td>Hockey</td>
+            <td>20</td>
+        </tr>
+    </table>
+    <h2>Html Cell Alignment</h2>
+    <table width="600" border="1">
+        <tr>
+            <td colspan="2" align="center">Sports</td>
+        </tr>
+        <tr>
+            <td>basketball</td>
+            <td>25</td>
+        </tr>
+        <tr>
+            <td>foodball</td>
+            <td align="right">45</td>
+        </tr>
+        <tr>
+            <td>Running</td>
+            <td align="right">12</td>
+        </tr>
+        <tr>
+            <td>Hockey</td>
+            <td>20</td>
+        </tr>
+    </table>
+
+    </p>
+    <hr>
+    <p id="section5">
+        <h2>html intro forms</h2>
+        <li>Used to gather input from yor user</li>
+        <li>From data can be inputted into a databse or sent to an e-mail address</li>
+        <li>input forms are created in html</li>
+        <li>data is submitted to a php script for processing </li>
+        <br>
+        <h2>Html Form Tags and attributes</h2>
+
+        <form name="employment" action="send.php" method="post">
+            <table width="600" border="1" colspanning="2" cellpadding="2">
+                <tr>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                </tr>
+            </table>
+        </form>
+
+        <h2>Html Forms GET vs POST</h2>
+        <li>HTTP protocol facilitates communication between client and server</li>
+        <li>two type of data transmission method: post & get</li>
+        <h3>post vs get</h3>
+        <li>GET request data fro a specified resource</li>
+        <li>POST submits data to be processed to a specified resources</li>
+        <h3>GET</h3>
+        <li>name/value pairs are send in the URL string  <br>
+        Eg: Send.php?fname=john&lname=smith</li>
+        <h3>POST</h3>
+        <li>send  name/value pairs in the http message body</li>
+        <li>Eg: POST send.php HTTP/1.1 <br>
+        fname=john$lnem=smith</li>
+        <h3>Get Request</h3>
+        <li>Canbe cached</li>
+        <li>Remaining in browser history</li>
+        <li>Should only be used to retrive data</li>
+        <li>Have a length Restrictions</li>
+        <li>Should not be used for sensitive data</li>
+        <li>can be bookmarked</li>
+        <h3>Post Request</h3>
+        <li>No restriction on data length</li>
+        <li>canot be bookmarked</li>
+        <li>Do not Remain in browser histroy</li>
+        <li>Request are naver cached</li>
+        <br>
+        <h2>Html forms input Text Fields</h2>
+
+        <form name="employment" action="send.php" method="post">
+            <table width="600" border="1" colspanning="2" cellpadding="2">
+                <tr>
+                    <td>Employment Application</td>
+                </tr>
+                <tr>
+                    <td>First Name</td>
+                    <td><input type="text" name="fname" maxlength="50"/></td>
+                </tr>
+                <tr>
+                    <td>Last Name</td>
+                    <td><input type="text" name="lname" maxlength="50"/></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                </tr>
+            </table>
+        </form>
+        <h2>Html Forms Selected Menu</h2>
+        <form name="employment" action="send.php" method="post">
+            <table width="600" border="1" colspanning="2" cellpadding="2">
+                <tr>
+                    <td>Employment Application</td>
+                </tr>
+                <tr>
+                    <td>First Name</td>
+                    <td><input type="text" name="fname" maxlength="50"/></td>
+                </tr>
+                <tr>
+                    <td>Last Name</td>
+                    <td><input type="text" name="lname" maxlength="50"/></td>
+                </tr>
+                <tr>
+                    <td>Position</td>
+                    <td>
+                        <select name="position">
+                            <option value="ac">Accountant</option>
+                            <option value="re">Receptionist</option>
+                            <option value="sv">Supervisor</option>
+                            <option value="ad">Administrator</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Experience Level</td>
+                    <td>
+                        <select name="experience">
+                            <option value="el">Entey Lavel</option>
+                            <option value="se">Some Experience</option>
+                            <option value="ve">Very Experience</option>
+                        </select>
+                    </td>
+                </tr>
+            </table>
+        </form>
+        <h2>Html forms Checkboxes and Radio Buttons</h2>
+        <form name="employment" action="send.php" method="post">
+            <table width="600" border="1" colspanning="2" cellpadding="2">
+                <tr>
+                    <td>Employment Application</td>
+                </tr>
+                <tr>
+                    <td>First Name</td>
+                    <td><input type="text" name="fname" maxlength="50"/></td>
+                </tr>
+                <tr>
+                    <td>Last Name</td>
+                    <td><input type="text" name="lname" maxlength="50"/></td>
+                </tr>
+                <tr>
+                    <td>Position</td>
+                    <td>
+                        <select name="position">
+                            <option value="ac">Accountant</option>
+                            <option value="re">Receptionist</option>
+                            <option value="sv">Supervisor</option>
+                            <option value="ad">Administrator</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Experience Level</td>
+                    <td>
+                        <select name="experience">
+                            <option value="el">Entey Lavel</option>
+                            <option value="se">Some Experience</option>
+                            <option value="ve">Very Experience</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Job Type</td>
+                    <td>
+                        <input type="checkbox" name="ft"/>Full-Time
+                        <input type="checkbox" name="pt"/>Part-Time
+                        <input type="checkbox" name="ot"/>Contract
+                    </td>
+                </tr>
+                <tr>
+                    <td>Employment Status</td>
+                    <td>
+                        <input type="radio" name="estatus" value="employed"/>Employed
+                        <input type="radio" name="estatus" value="unemployed"/>Unemployed
+                        <input type="radio" name="estatus" value="student"/>Student
+    
+                    </td>
+            
+                </tr>
+            </table>
+        </form>
+        <h2>HTML forms Text area and Buttons</h2>
+        <form name="employment" action="send.php" method="post">
+            <table width="600" border="1" colspanning="2" cellpadding="2">
+                <tr>
+                    <td>Employment Application</td>
+                </tr>
+                <tr>
+                    <td>First Name</td>
+                    <td><input type="text" name="fname" maxlength="50"/></td>
+                </tr>
+                <tr>
+                    <td>Last Name</td>
+                    <td><input type="text" name="lname" maxlength="50"/></td>
+                </tr>
+                <tr>
+                    <td>Position</td>
+                    <td>
+                        <select name="position">
+                            <option value="ac">Accountant</option>
+                            <option value="re">Receptionist</option>
+                            <option value="sv">Supervisor</option>
+                            <option value="ad">Administrator</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Experience Level</td>
+                    <td>
+                        <select name="experience">
+                            <option value="el">Entey Lavel</option>
+                            <option value="se">Some Experience</option>
+                            <option value="ve">Very Experience</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Job Type</td>
+                    <td>
+                        <input type="checkbox" name="ft"/>Full-Time
+                        <input type="checkbox" name="pt"/>Part-Time
+                        <input type="checkbox" name="ot"/>Contract
+                    </td>
+                </tr>
+                <tr>
+                    <td>Employment Status</td>
+                    <td>
+                        <input type="radio" name="estatus" value="employed"/>Employed
+                        <input type="radio" name="estatus" value="unemployed"/>Unemployed
+                        <input type="radio" name="estatus" value="student"/>Student
+                    </td>
+                </tr>
+                <tr>
+                    <td>Additionl Comment</td>
+                    <td>
+                        <textarea name="comment" cols="45" rows="5" ></textarea>
+                    </td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>
+                        <input type="submit" name="submit" value="Submit"/>
+                        <input type="reset" name="reset" value="Reset"/>
+                    </td>
+                </tr>
+            </table>
+            </form>
+    </p>
+    <hr>
+    <p id="section6">
+        <h2>Html Project Header</h2>
+        <table width="100%" height="60" border="0" cellspacing="5" cellpadding="5" bgcolor="#000000">
+            <tr>
+                <td align = "center">
+                    <table width="547" border="0" cellspacing="1" cellpadding="1" >
+                        <td width="96">
+                            <font face="verdana, Genava, Sans-serif" color="white">
+                                <h3>Home</h3>
+                            </font>
+                        </td>
+                        <td width="113">
+                            <font face="verdana, Genava, Sans-serif" color="white">
+                                <h3>About</h3>
+                            </font>
+                        </td>
+                        <td width="128">
+                            <font face="verdana, Genava, Sans-serif" color="white">
+                                <h3>Services</h3>
+                            </font>
+                        </td>
+                        <td width="114">
+                            <font face="verdana, Genava, Sans-serif" color="white">
+                                <h3>Client</h3>
+                            </font>
+                        </td>
+                        <td width="80">
+                            <font face="verdana, Genava, Sans-serif" color="white">
+                                <h3>Contact</h3>
+                            </font>
+                        </td>
+                    </table>
+                </td>
+            </tr>
+        </table>
+        <h2>Html Project Callout</h2>
+
+
+
+
     </p>
 
+
+
+
+
+
+
+
 </body>
+
 </html>
